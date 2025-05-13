@@ -1,0 +1,132 @@
+/* Alapértelmezett beállítások */
+body {
+    background: linear-gradient(to bottom, #5C8047 0%, #A5E082 25%, #5A7A47 100%);
+    color: #010101;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* Navigáció */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #333;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #A5E082; /* limezöld árnyalat, a háttérből */
+    text-decoration: underline;
+  }
+  
+  
+  /* Fejléc és lábléc */
+  header, footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  main {
+    padding: 1rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+  }
+  
+  /* Címsorok */
+  h1, h2, h3 {
+    color: #515936;
+  }
+  
+  /* Linkek megkülönböztetése */
+  a:link {
+    color: blue;
+  }
+  a:visited {
+    color: rgb(35, 115, 19);
+  }
+  
+  /* Táblázatokhoz előkészítés */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  th, td {
+    border: 1px solid #999;
+    padding: 0.5rem;
+  }
+  caption {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Reszponzív elrendezés */
+  @media screen and (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    main {
+      padding: 1rem;
+    }
+  }
+  
+  /* Nyomtatási nézet */
+  @media print {
+    nav, header, footer, aside, video {
+      display: none !important;
+    }
+  
+    main {
+      color: black;
+      background: white;
+      font-size: 12pt;
+      padding: 0;
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  .galeria-sor {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+  }
+  
+  .galeriakep {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+
+  .Spotify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+  }
